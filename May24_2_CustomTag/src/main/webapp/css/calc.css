@@ -1,0 +1,8 @@
+@charset "EUC-KR";
+.calcinput{
+	border:green solid 2px;
+	}
+	.calcbtn{
+	background-color: pink;
+	color:white;
+	}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+	기존의 톰캣 채제:글자는 인코딩 가능한데,파일은 인코딩 할줄모름
+	->직접 만들어야 할 처지인데
+	->oreilly사에서 cos.jar를 만들어줬음
+	cos.jar체제로
+	1)파일이 업로드될 폴더 확보
+	 ->프로젝트에 만들어놓으면 서버쪽에 만들어질테니
+	 ->폴더 만들어놨는데 ,Tomcat이 인식 못하는 버그가 꽤 심함
+	 2)POST 방식
+	 요청 파라메터가 주소에 실려가는 GET방식으로는
+	 파일이 표현 불가능할테니 POST
+	 Output? tittttle=ㅋㅋㅋ%photoo=????
+	 3)인코딩을 기존 Tomcat방식->cos.jar의 방식으로
+ -->
+ 
+<form action="Output" 
+method="post"
+enctype="multipart/form-data">
+<!-- enctype는 파일업로드를 하기위해 추가한것 -->
+
+	제목:<input name="tittttle"><br>
+	사진:<input name="photoo" type="file" ><br>
+	압축파일:<input name="downn" type="file"><br>
+	<button>올리기</button>
+</form>
+</body>
+</html>

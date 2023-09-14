@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function check() {
+		//document:이 HTML을 의미
+		var idInput = document.f.id;//document.form이름.input이름
+		var pwInput = document.f.pw;
+		var pwckInput = document.f.pwcheck;
+		var ageInput = document.f.age;
+
+		//Java에서는 idInput.value!=null이지만
+		//Javascript는 null이 아닌 !idInput.value
+		if (!idInput.value) {//안썼으면
+			alert("id는 필수로 기재해야합니다.");
+			idInput.focus();//바로 그 칸으로 클릭해주는 focus
+			return false;
+
+		}
+
+		if (idInput.value.length < 5) {//글자수
+			alert("아이디는 최소 5자이상.");
+			idInput.value = "";
+			idInput.focus();
+			return false;
+
+		}
+		//한글못쓰게: 기술적으로는 문제없는데
+		//		  한글 허용해놓으면 개발자 할일이 폭증
+		//중복 primary key?
+		if (!pwInput.value) {
+			alert("비밀번호를 기입하세요.");
+			pwInput.focus();
+			return false;
+		}
+		if (pwInput.value.length < 4) {
+			alert("비밀번호는 최소 4자이상");
+			pwInput.focus();
+			return false;
+		}
+
+		if (pwInput.value != pwckInput.value) {//pw,pw확인 다르면
+			alert("pw랑 pw재입력이 불일치합니다.");
+			pwInput.focus();
+
+			return false;
+
+		}
+		if (!ageInput.value) {
+			alert("나이를 입력해주세요.");
+			ageInput.focus();
+			return false;
+
+		}
+		if (isNaN(ageInput.value)) {//숫자가 아닌 다른것을 썼는지
+			alert("나이에는 숫자만 기입해주세요.");
+			ageInput.focus();
+			return false;
+		}
+
+		//비번에 숫자 하나이상
+		var no = "1234567890";
+		var noOK = false;
+		//abc678
+		for (var i = 0; i < no.length; i++) {
+			if (pwInput.value.indexOf(no[i]) != -1) {
+				noOk = true;
+				break;
+			}
+			if (!noOK) {
+				alert("숫자 기입해주세요.");
+				pwInput.value = "";
+				pwckInput.value = "";
+				pwInput.focus();
+				return false;
+			}
+
+		}
+		var k = "QWERTYUIOPLKJHGFDSAZXCVBNM";
+		var kOK = false;
+		for (var i = 0; i < k.length; i++) {
+			if (pwInput.value.indexOf(k[i]) != -1) {
+				kOK = true;
+				break;
+			}
+			if (!kOK) {
+				alert("대문자 최소 1자를 기입해주세요.");
+				pwInput.value = "";
+				pwckInput.value = "";
+				pwInput.focus();
+				return false;
+			}
+
+		}
+		var tk = "!@#$%^&*";
+		var tkOK = false;
+		for (var i = 0; i < tk.length; i++) {
+			if (pwInput.value.indexOf(tk[i]) != -1) {
+				tkOk = true;
+				break;
+			}
+			if (!tkOK) {
+				alert("특수문자 최소 1자를 기입해주세요");
+				pwInput.value = "";
+				pwckInput.value = "";
+				pwInput.focus();
+				return false;
+			}
+
+		}
+
+		return true;
+
+	}
+</script>
+</head>
+<body>
+	<!-- onsubmit:요청 출발하려고할때 -->
+	<form name="f" action="A" onsubmit="return check();">
+		id:<input name="id" maxlength="10" autofocus="autofocus"><br>
+		pw:<input name="pw" type="password" maxlength="12"><br>
+		pw확인:<input name="pwcheck" type="password" maxlength="12"><br>
+		나이:<input name="age" maxlength="3">
+		<button>가입</button>
+
+
+	</form>
+	<!-- 
+	어제:잘못써도 일단 서블릿으로 가서,
+		서블릿에서 try/if...
+	->잘못썼으면 서블릿으로 가지도 말자 -->
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+@charset "EUC-KR";
+.aReview{
+	width: 800px;
+	box-shadow: 10px 10px 10px black;
+	border:black solid 2px;
+	border-radius:20px;/*¸ð¼­¸® ±ð±â*/
+	margin: 20px;
+}
+
+.aReview .td1{
+	width: 200px;
+	
+}
+.aReview .td1 img{
+	max-width:150px;
+	
+}
+.aReview .td2{
+	width:100px;
+	padding:10px;
+	font-family: "±Ã¼­";
+	font-size: 16px;
+}
+.aReview .td3{
+	padding:10px;
+	font-family: "¹è´ÞÀÇ¹ÎÁ· ÁÖ¾Æ";
+	
+}
+.aReview .td4{
+	padding:10px;
+	font-family: "µ¸¿òÃ¼";
+	
+}

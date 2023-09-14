@@ -1,0 +1,56 @@
+@charset "EUC-KR";
+
+
+
+
+table {
+	border-spacing: 0px;
+	font-family: 배달의민족 주아;
+	background-color: #bfe3f2;
+}
+
+#siteTitleArea {
+	width: 100%;
+	color: #1aa7bb;
+}
+
+#siteTitleArea table {
+	width: 1200px;
+}
+
+#siteTitle {
+	background-color: #bfe3f2;
+	height: 200px;
+	font-size: 30pt;
+	font-weight: 900;
+	padding-left: 30px;
+}
+
+#siteMenu {
+	background-color: #bfe3f2;
+	border-top: black solid 2px;
+	border-bottom: black solid 2px;
+	height: 50px;
+}
+
+#siteMenu a {
+	color: black;
+	font-weight: 800;
+	padding-left: 30px;
+}
+
+#sitecontent {
+	background-color: #bfe3f2;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding: 170px;
+}
+
+#resultArea {
+	
+	color: green;
+	right: 300px;
+	top: 75px;
+	font-weight: 900;
+}

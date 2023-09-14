@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style type="text/css">
+code {
+  display: block;
+  overflow-x: auto;
+}
+pre {
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  padding: 10px;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
+}
+ #draggable-element {
+      width: 100px;
+      height: 100px;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/components/prism-core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/plugins/autoloader/prism-autoloader.min.js"></script>
+<script type="text/javascript" src="jQuery.js"></script>
+<script>
+$(function() {
+    // Make the element with ID "draggable-element" draggable
+    $("#draggable-element").draggable();
+  });
+function addcd(){
+	var c=$("<pre><code></code></pre>").attr("class","language-javascript").text("function()")
+	$("td").append(c)
+}
+</script>
+<title>Insert title here</title>
+</head>
+<body>
+<table class="home" border="1">
+<tr><td>홈임</td></tr>
+<button onclick="addcd();">code</button>
+<tr><td class="c"><textarea></textarea></td></tr>
+</table>
+<pre><code class="language-javascript">function()</code></pre>
+<div id="draggable-element">
+    Drag me!
+  </div>
+
+</body>
+</html>

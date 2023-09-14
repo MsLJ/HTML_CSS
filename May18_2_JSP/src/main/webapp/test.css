@@ -1,0 +1,29 @@
+@charset "EUC-KR";
+.tb{
+	box-shadow:black solid 5px 5px 5px;
+	width:30%;
+	height:200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: black soild 2px;
+	 
+	
+	
+}
+
+body{
+	font-family: 배달의민족 주아;
+}
+.th1{
+	
+	background-color: orange;
+}
+.bt{
+	color: green;
+}
+.select{
+	width: 100%;
+}
+.name{
+	width: 98%;
+}

@@ -1,0 +1,79 @@
+@charset "EUC-KR";
+table{
+	width:300px;
+	box-shadow:5px 5px 5px black;
+	margin-left: auto;
+	margin-right: auto;
+	border-spacing: 0px;
+}
+th{
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	height:20px;
+	font-family: 배달의민족 주아;
+	
+}
+.td1{
+	font-family:배달의민족 주아;
+	width:50px;
+	color:green;
+}
+.boxType{
+	border: green solid 5px;
+	border-bottom:brown solid 2px;
+	width:90%;
+	height:40px;
+	margin:10px;
+	text-align: center;
+	outline: gray;/*선택시 기본효과*/
+}
+.boxType:focus{
+	border-bottom: brown solid 5px;
+}
+.boxType::placeholder{
+	font-family:배달의민족 주아;
+	color:red;
+}
+.btnType{
+	font-family:궁서;
+	margin:10px;
+	cursor: pointer;
+	font-size: 15px;
+	 
+	 
+}
+.td3{
+	border: green solid 2px;
+	border-bottom: brown solid 2px;
+	font-size: 15px;
+}
+select{
+	border:green solid 2px;
+	border-bottom: brown solid 2px;
+	width:85%; height:35px;
+	margin:10px;
+	font-family: 배달의민족 주아;
+	
+}
+checkbox{
+	
+	font-family: 배달의민족 주아;
+
+	}
+	
+textarea{
+	border: green solid 2px;
+	border-bottom:brown solid 2px;
+	width:85%;
+	height:100px;
+	margin:10px;
+	outline: none;
+	font-family: 배달의민족 주아;
+	resize: none;
+	
+	
+}
+textarea::placeholder{
+	color: red;
+}

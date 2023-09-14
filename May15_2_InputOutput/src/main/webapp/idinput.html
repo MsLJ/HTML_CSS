@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/idinput.css">
+</head>
+<body>
+	<form action="User" method="post">
+		<table class="t">
+			<tr>
+				<th colspan="2">회원가입</th>
+			</tr>
+			<tr>
+				<td class="td1"><h1>ID</h1></td>
+				<td class="td2"><input class="boxType" placeholder="필수,최대20자"
+					name="id"></td>
+			</tr>
+			<tr>
+				<td class="td1"><h1>PW</h1></td>
+				<td><input class="boxType" placeholder="최소 대문자 1자이상 포함"
+					name="pww" type="password"></td>
+			</tr>
+			<tr>
+				<td class="td1"><h2>성별</h2></td>
+				<td class="td3" align="center"><input type="radio" name="sex"
+					value="남" checked="checked">남자 <input type="radio"
+					name="sex" value="여">여자 <input type="radio" name="sex"
+					value="기">기타</td>
+			</tr>
+			<tr>
+				<td class="td1"><h2>주소</h2></td>
+				<td align="center">
+					<!-- select option 공간을 많이 차지하지않음
+			option value로 값을 따로 설정가능 --> <select name="area">
+						<option>서울</option>
+						<option>인천</option>
+						<option>경기</option>
+						<option>기타</option>
+				</select> <!--  
+			<input type="radio" name="area" value="서울" checked="checked">서울
+			<input type="radio" name="area" value="경기">경기
+			<input type="radio" name="area" value="인천">인천
+			<input type="radio" name="area" value="기타">기타
+			-->
+				</td>
+			</tr>
+			<!--  
+			<tr>
+			<td class="td1"><h6>교통수단</h6></td>
+			<td align="center">
+			<select name="transportation">
+			<option>버스/지하철</option>
+			<option>자차</option>
+			<option>자전거</option>
+			<option>도보</option>
+			</select>
+			</td>
+			</tr>
+			-->
+			<tr>
+				<td align="left" class="td1"><h5>교통수단</h5></td>
+				<td align="left"><input type="checkbox" name="transportation"
+					value="버스">버스 <br> <input type="checkbox"
+					name="transportation" value="지하철">지하철<br> <input
+					type="checkbox" name="transportation" value="자전거">자전거<br>
+					<input type="checkbox" name="transportation" value="도보">도보<br>
+
+				</td>
+				<td>
+					<hr>
+				</td>
+			</tr>
+
+			<tr>
+
+				<td align="left" class="td1"><h3>취미</h3></td>
+
+				<td><input type="checkbox" name="hobby" value="영화보기">영화보기<br>
+					<input type="checkbox" name="hobby" value="책 읽기">책 읽기<br>
+					<input type="checkbox" name="hobby" value="게임하기">게임하기<br>
+					<input type="checkbox" name="hobby" value="운동하기">운동하기<br>
+
+				</td>
+			</tr>
+			<tr>
+				<td class="td1"><h5>자기소개</h5></td>
+				<td><textarea name="introduce" placeholder="200자 이내로 기재해주세요"></textarea>
+				</td>
+			</tr>
+			<tr>
+			<td class="td1"><h2>제목</h2> </td>
+			<td align="center"><input type="text">
+			</tr>
+			<tr>
+			<td align="center"><input type="file"></td>
+			</tr>
+
+			<!-- 
+			사용자 입장에서 쓰면 매우 불편 ctrl누르고 다중선택
+			(사용방법 나도 몰랐음)
+			<td align="center">
+			<select name="hobby" multiple="multiple" size="2">
+			<option>영화보기</option>
+			<option>독서</option>
+			<option>게임하기</option>
+			<option>운동하기</option>
+			
+			
+			</select>
+			 -->
+
+
+
+
+			<tr>
+				<!-- 
+			원래:input type="submit"누르면 요청 출발
+			form속에 버튼모양 나는거 아무거나 누르면 요청 출발
+			 -->
+				<td colspan="2" align="center">
+			<!--     예전방식
+			  	<input type="submit" value="가입">
+			-->
+					<button  class="btnType">가입</button>
+					<input type="image" src="Doge.jpg">
+					<input type="reset" value="원상태로" class="btnType">
+				</td>
+			</tr>
+		</table>
+
+	</form>
+	<input type="file">
+	<!-- html5에서 대거 추가-> ie에서 안됨 ->써먹기가.. 
+	<input type="range">
+	<input type="datetime-local">
+	
+	
+	
+	파일 업로드->입력 유효성 검사
+	-->
+
+</body>
+</html>

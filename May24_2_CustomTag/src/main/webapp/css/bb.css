@@ -1,0 +1,8 @@
+@charset "EUC-KR";
+.bbinput{
+	border:green solid 2px;
+	}
+	.bbbtn{
+	background-color: pink;
+	color:white;
+	}

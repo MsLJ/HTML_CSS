@@ -1,0 +1,32 @@
+@charset "EUC-KR";
+#site{
+	margin-left: auto;
+	margin-right: auto;
+	width:1200px;
+	border-spacing:0px; 
+}
+#siteTitle{
+	height:90px;
+	font-family: 배달의민족 주아;
+	font-size:25pt; 
+	background: #A8C9CD;
+	font-weight: 900;
+	padding-left: 20px;
+	
+	
+	}
+	#siteMenu{
+	height:40px;
+	background-color: #B5B3C1;
+	font-family: 배달의민족 주아;
+	color:white;
+	
+	}
+	#sitecontent{
+	font-family: 배달의민족 주아;
+	background-color:#F4DBCF;
+	
+	}
+	#a1{
+	padding-left: 20px;
+	}

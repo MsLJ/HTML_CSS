@@ -1,0 +1,59 @@
+@charset "EUC-KR";
+
+#reviewArea table {
+	width: 1200px;
+	background-color: #bfe3f2;
+}
+
+#reviewArea {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	padding: 170px;
+}
+
+.th1 {
+	color: #000040;
+}
+.dataTr{
+	color:black;
+}
+.datadate{
+	color:#7176d0;
+}
+.page{
+	padding-left: 30px;
+}
+#bbsDetailTbl{
+	width: 60%;
+	background-color: #bfe3f2;
+	
+}
+#bbsDetailTbl input{
+	width: 90%;
+	font-family: 배달의민족 주아;
+	height: 40px;
+	border: black solid 3px;
+	padding: 5px;
+	font-size: 15pt;
+	height: 40px;
+	
+}
+#bbsDetailTbl textarea{
+	resize: none;
+	width: 90%;
+	font-family: 배달의민족 주아;
+	height: 240px;
+	border: black solid 3px;
+	outline: none;
+	padding: 5px;
+	font-size: 14pt;
+}
+#bbsDetailTbl td{
+	padding: 10px;
+}
+#bbsDetailTbl button{
+	border: black solid 3px;
+	font-family: 배달의민족 주아;
+	font-size: 10pt;
+}

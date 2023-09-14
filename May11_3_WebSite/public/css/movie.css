@@ -1,0 +1,19 @@
+@charset "EUC-KR";
+.aMovie{
+	width:300px;
+	box-shadow:3px 3px 3px black;
+	margin:30px;
+	border-radius:10px;
+	float:left;/*°ÝÀÚÇü*/
+}
+.aMovie img{
+	max-width:280px;
+	border-color: black;
+	
+	
+}
+.aMovie .td1{
+	width:100px;
+	padding:10px;
+	font-family: "±Ã¼­";
+}

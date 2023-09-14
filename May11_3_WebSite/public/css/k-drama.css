@@ -1,0 +1,37 @@
+@charset "EUC-KR";
+
+#k-dramaBBS{
+	width:800px;
+	box-shadow: 5px 5px 5px black;
+	
+	/*제목줄에만*/
+	background-color: black;
+	color:white;
+	font-family:"배달의민족 주아";
+	border-spacing:10px; 
+}
+#k-dramaBBS td{
+	border-bottom: #ff6600 solid 5px;
+	
+}
+#k-dramaBBS .th1{
+	width:70px;
+	height:30px;
+	
+}
+
+#k-dramaBBS .dataTr{
+	color:white;
+	background-color: black;
+	font-family:"맑은고딕";
+	/*ease-in ease-out linear*/ 
+	/*속성명 시간 속도조절*/
+	transiton:background-color 1s ease-in;
+	
+	
+}
+#k-dramaBBS .dataTr:hover{
+	background-color:#666666;
+	cursor:pointer;
+	
+}

@@ -1,0 +1,41 @@
+@charset "EUC-KR";
+
+#reviewArea {
+	width: 90%;
+}
+
+#reviewwritetb {
+	width: 60%;
+	font-family: 배달의민족 주아;
+}
+
+#reviewwritetb td {
+	padding: 10px;
+}
+
+#reviewwritetb input {
+	width: 90%;
+	font-family: 배달의민족 주아;
+	height: 40px;
+	border: black solid 3px;
+	padding: 5px;
+	font-size: 15pt;
+	height: 40px;
+}
+
+#reviewwritetb textarea {
+	resize: none;
+	width: 90%;
+	font-family: 배달의민족 주아;
+	height: 240px;
+	border: black solid 3px;
+	outline: none;
+	padding: 5px;
+	font-size: 14pt;
+}
+
+#reviewwritetb button {
+	border: black solid 3px;
+	font-family: 배달의민족 주아;
+	font-size: 10pt;
+}

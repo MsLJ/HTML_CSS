@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+<Resource
+		name="msPool"
+		type="javax.sql.DataSource"
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+		username="ljh"
+		password="dlwnsgk0108"
+		url="jdbc:oracle:thin:@195.168.9.65:1521:xe"
+		maxTotal="10000"
+		maxIdle="1000"
+	/>
+</Context>

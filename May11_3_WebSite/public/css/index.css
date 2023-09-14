@@ -1,0 +1,57 @@
+@charset "EUC-KR";
+#font-face{
+	font-family:"배달의민족 주아";
+	src: url("public/css/BMJUA_ttf.ttf");
+	
+}
+
+#siteArea {
+	/*가운데정렬*/
+	margin-left: auto;
+	margin-right: auto; 
+	/*
+	640x480->800x600
+	->1024x768->???
+	*/
+	width:1200px;
+	
+
+	}
+	#siteTitle {
+	font-size:40pt;
+	color:#ff0606;
+	text-shadow:3px 5px 10px black;
+	text-decoration:line-through;
+	padding-left:450px;
+	font-weight:700;
+	border:#210b01 outset 5px;
+	background-color:black;
+	font-family:"배달의민족 주아"
+	
+	}
+	#siteMenuArea {
+	
+	border-top:#000000 soild 15px;
+	border-bottom:#000000 soild 15px;
+	height:70px;
+	
+	
+	}
+	#SITEMENUAREA {
+	color:#333300;
+	text-decoration: none;
+	margin-left:60px;
+	margin-right:60px;
+	font-family:"배달의민족 주아";
+	font-weight: 600;
+	
+	
+	}
+	#siteMenuArea a:hover {
+	text-shadow: 5px 5px 5px #330066;
+	}
+	#homeimg {
+	width:40%;
+	height:30%;
+	box-shadow: 5px 5px 5px black;
+	}
